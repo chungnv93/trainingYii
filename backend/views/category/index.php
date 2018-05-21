@@ -23,6 +23,7 @@
             }
         }else {
             ?>
+            <br />
             Không có dữ liệu!!!
     <?php
         }

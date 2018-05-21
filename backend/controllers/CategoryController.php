@@ -2,7 +2,7 @@
 namespace backend\controllers;
 use yii\web\Controller;
 use Yii;
-use common\models\Category;
+use common\models\Categories;
 class CategoryController extends Controller {
     public function actions()
     {
@@ -14,23 +14,21 @@ class CategoryController extends Controller {
     }
 
     public function actionIndex() {
-        $categories = Category::getAllCategory();
+        $categories = Categories::find()->all();
         return $this->render('/category/index', ['categories' => $categories]);
     }
 
     public function actionSave() {
-        $request = Yii::$app->getRequest();
-        if($request->post()){
-            $params = $request->post();
-            $model = new Category();
-            $valid = $model->validate();
-            if ($valid) {
-                return $this->redirect('/category/index')->send();
-            } else {
-                return $this->render('/category/create', ['errors' => $model->getErrors()]);
-            }
-        } else {
-            return $this->render('/category/create');
-        }
+        $model = new Categories();
+        if($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $request = Yii::$app->request->post();
+            
+            $model->name = $request['Categories']['name'];
+            $model->slug = '123';
+            $model->save();
+            Yii::$app->session->setFlash('success', 'Insert Data successfull');
+        } 
+            return $this->render('/category/create', ['model' => $model]);
+        
     }
 }
