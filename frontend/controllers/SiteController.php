@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use common\models\Categories;
+use common\models\Comments;
 use common\models\Posts;
 use Yii;
 use yii\base\InvalidParamException;
@@ -217,9 +218,25 @@ class SiteController extends Controller
     }
 
     public function actionDetail($id) {
-        $model = new Posts();
-        $post = $model->getByIdPost($id);
-        return $this->render('detail', ['post' => $post]);
+        $model = new Comments();
+        $models = new Posts();
+        $post = $models->getByIdPost($id);
+        $comments = $model->getByPost($id);
+        if($model->load(Yii::$app->request->post())) {
+            $model->validate();
+            if(Yii::$app->user->isGuest){
+                return $this->redirect(array('site/login'));
+            }else{
+                $request =  Yii::$app->request->post();
+                $model->content = $request['Comments']['content'];
+                $model->post_id = $id;
+                $model->user_id = Yii::$app->user->identity->id;
+                $model->save();
+                Yii::$app->session->setFlash('success', 'Send comment success');
+                return $this->refresh();
+            }
+        }
+            return $this->render('detail', ['post' => $post, 'model' => $model, 'comments' => $comments]);
     }
 
     public function actionCategory($id) {

@@ -17,5 +17,29 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?=  $post->description ?>
     </p>
+    <div class="padding-box">
+        <h2>Comment</h2>
+        <?php
+        if(isset($comments) && count($comments) > 0) {
+            foreach($comments as $comment) {
+                ?>
+                <div class="col-sm-12 border-box">
+                    <div class="col-sm-2">
+                        <p class="title-name"><?= \common\models\User::findOne($comment->user_id)->username ?></p>
+                    </div>
+                    <div class="col-sm-9">
+                        <?= $comment->content ?>
+                    </div>
+                </div>
+                <?php
+            }
+        }
+        ?>
+    </div>
+
+    <?php $form = ActiveForm::begin(); ?>
+    <?= $form->field($model, 'content')->textarea() ?>
+    <?= Html::submitButton('Submit', ['class' => 'btn btn-success']) ?>
+    <?php $form1 = ActiveForm::end(); ?>
 
 </div>
