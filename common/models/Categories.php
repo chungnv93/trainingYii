@@ -58,4 +58,8 @@ class Categories extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Posts::className(), ['cate_id' => 'id']);
     }
+
+    public function getByID($id) {
+        return Category::findOne($id);
+    }
 }

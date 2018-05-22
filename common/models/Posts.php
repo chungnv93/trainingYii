@@ -58,4 +58,12 @@ class Posts extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Categories::className(), ['id' => 'cate_id']);
     }
+
+    public function getAllPost() {
+        return Posts::find()->all();
+    }
+
+    public function getByIdPost($id) {
+        return Posts::findOne($id);
+    }
 }

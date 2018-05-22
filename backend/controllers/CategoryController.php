@@ -29,7 +29,29 @@ class CategoryController extends Controller {
             $model->slug = $slugify->slugify($request['Categories']['name']);
             $model->save();
             Yii::$app->session->setFlash('success', 'Insert Data successfull');
+            return $this->redirect(array('category/index'));
         } 
             return $this->render('/category/create', ['model' => $model]);
     }
+
+    public function actionEdit($id) {
+        $model = Categories::findOne($id);
+        if($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $request = Yii::$app->request->post();
+            $slugify = new Slugify();
+            $model->name = $request['Categories']['name'];
+            $model->slug = $slugify->slugify($request['Categories']['name']);
+            $model->save();
+            Yii::$app->session->setFlash('success', 'Update Data successfull');
+            return $this->redirect(array('category/index'));
+        }
+        return $this->render('/category/update', ['model' => $model]);
+    }
+
+    public function actionDelete($id) {
+        Categories::findOne($id)->delete();
+        Yii::$app->session->setFlash('success', 'Delete Data successfull');
+        return $this->redirect(['index']);
+    }
+
 }

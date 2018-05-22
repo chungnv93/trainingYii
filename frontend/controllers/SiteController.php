@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Posts;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -12,6 +13,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+
 
 /**
  * Site controller
@@ -211,5 +213,11 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+
+    public function actionDetail($id) {
+        $model = new Posts();
+        $post = $model->getByIdPost($id);
+        return $this->render('detail', ['post' => $post]);
     }
 }

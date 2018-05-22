@@ -1166,3 +1166,1397 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1526917259.832
     'REQUEST_TIME' => 1526917259
 ]
+2018-05-22 03:22:07 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][Error] Error: Class 'Cocur\Slugify\Slugify' not found in C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php:27
+Stack trace:
+#0 [internal function]: backend\controllers\CategoryController->actionSave()
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('save', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/save', Array)
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-05-22 03:22:07 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/save'
+]
+
+$_POST = [
+    '_csrf-backend' => 'jgrFruKEfKHvVtJ97qivA5KPUUdF0zyVqVggSdlDieH9PPzhpOpRwL0dmSyr4f172-wEDx29a9jhK0I7nXPOpw=='
+    'Categories' => [
+        'name' => 'ad'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '130'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '49932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fsave'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526952127.28
+    'REQUEST_TIME' => 1526952127
+]
+2018-05-22 03:24:50 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][Error] Error: Class 'Cocur\Slugify\Slugify' not found in C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php:27
+Stack trace:
+#0 [internal function]: backend\controllers\CategoryController->actionSave()
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('save', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/save', Array)
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-05-22 03:24:49 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/save'
+]
+
+$_POST = [
+    '_csrf-backend' => 'jgrFruKEfKHvVtJ97qivA5KPUUdF0zyVqVggSdlDieH9PPzhpOpRwL0dmSyr4f172-wEDx29a9jhK0I7nXPOpw=='
+    'Categories' => [
+        'name' => 'ad'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '130'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '50450'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fsave'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526952289.254
+    'REQUEST_TIME' => 1526952289
+]
+2018-05-22 03:26:34 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][Error] Error: Class 'Cocur\Slugify\Slugify' not found in C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php:27
+Stack trace:
+#0 [internal function]: backend\controllers\CategoryController->actionSave()
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('save', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/save', Array)
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-05-22 03:26:33 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/save'
+]
+
+$_POST = [
+    '_csrf-backend' => 'jgrFruKEfKHvVtJ97qivA5KPUUdF0zyVqVggSdlDieH9PPzhpOpRwL0dmSyr4f172-wEDx29a9jhK0I7nXPOpw=='
+    'Categories' => [
+        'name' => 'ad'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '130'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '50506'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fsave'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526952393.087
+    'REQUEST_TIME' => 1526952393
+]
+2018-05-22 03:34:03 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][Error] Error: Class 'Cocur\Slugify\Slugify' not found in C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php:27
+Stack trace:
+#0 [internal function]: backend\controllers\CategoryController->actionSave()
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('save', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/save', Array)
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-05-22 03:34:01 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/save'
+]
+
+$_POST = [
+    '_csrf-backend' => 'jgrFruKEfKHvVtJ97qivA5KPUUdF0zyVqVggSdlDieH9PPzhpOpRwL0dmSyr4f172-wEDx29a9jhK0I7nXPOpw=='
+    'Categories' => [
+        'name' => 'ad'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '130'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '50847'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fsave'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526952841.694
+    'REQUEST_TIME' => 1526952841
+]
+2018-05-22 03:52:18 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "category/edit/1". in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit/1', Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-05-22 03:52:18 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit/1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51679'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fedit%2F1'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit%2F1'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526953938.59
+    'REQUEST_TIME' => 1526953938
+]
+2018-05-22 03:52:34 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('edit', Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2018-05-22 03:52:34 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit'
+    1 => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51687'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fedit&1=1'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit&1=1'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526953954.222
+    'REQUEST_TIME' => 1526953954
+]
+2018-05-22 03:52:51 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('edit', Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2018-05-22 03:52:51 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit'
+    1 => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51692'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fedit&1=1'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit&1=1'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526953971.72
+    'REQUEST_TIME' => 1526953971
+]
+2018-05-22 03:52:54 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "category/edit/id". in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit/i...', Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-05-22 03:52:54 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit/id'
+    1 => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51695'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fedit%2Fid&1=5'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit%2Fid&1=5'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526953974.486
+    'REQUEST_TIME' => 1526953974
+]
+2018-05-22 03:53:11 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "category/edit/id". in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit/i...', Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-05-22 03:53:11 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit/id'
+    1 => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51706'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fedit%2Fid&1=5'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit%2Fid&1=5'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526953991.535
+    'REQUEST_TIME' => 1526953991
+]
+2018-05-22 03:53:13 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant id - assumed 'id' in C:\xampp\htdocs\projects\trainingYii\backend\views\category\index.php:20
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\backend\views\category\index.php(20): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\CategoryController))
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('/category/index', Array, Object(backend\controllers\CategoryController))
+#5 C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php(20): yii\base\Controller->render('/category/index', Array)
+#6 [internal function]: backend\controllers\CategoryController->actionIndex()
+#7 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/index', Array)
+#11 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-05-22 03:53:12 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51708'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Findex'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526953992.933
+    'REQUEST_TIME' => 1526953992
+]
+2018-05-22 03:53:14 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant id - assumed 'id' in C:\xampp\htdocs\projects\trainingYii\backend\views\category\index.php:20
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\backend\views\category\index.php(20): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\CategoryController))
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('/category/index', Array, Object(backend\controllers\CategoryController))
+#5 C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php(20): yii\base\Controller->render('/category/index', Array)
+#6 [internal function]: backend\controllers\CategoryController->actionIndex()
+#7 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/index', Array)
+#11 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-05-22 03:53:14 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Fsave'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51706'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Findex'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526953994.142
+    'REQUEST_TIME' => 1526953994
+]
+2018-05-22 03:53:26 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: backend\controllers\CategoryController::findModel() in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php(37): yii\base\Component->__call('findModel', Array)
+#1 [internal function]: backend\controllers\CategoryController->actionEdit('1')
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('edit', Array)
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit', Array)
+#6 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2018-05-22 03:53:26 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51720'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fedit&id=1'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit&id=1'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526954006.015
+    'REQUEST_TIME' => 1526954006
+]
+2018-05-22 03:57:59 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in C:\xampp\htdocs\projects\trainingYii\backend\views\category\update.php:15
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\backend\views\category\update.php(15): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\CategoryController))
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('/category/updat...', Array, Object(backend\controllers\CategoryController))
+#5 C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php(38): yii\base\Controller->render('/category/updat...')
+#6 [internal function]: backend\controllers\CategoryController->actionEdit('1')
+#7 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('edit', Array)
+#10 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit', Array)
+#11 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-05-22 03:57:59 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fedit&id=1'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit&id=1'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526954279.189
+    'REQUEST_TIME' => 1526954279
+]
+2018-05-22 04:02:42 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][ParseError] ParseError: syntax error, unexpected '}', expecting ';' in C:\xampp\htdocs\projects\trainingYii\backend\controllers\CategoryController.php:46
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(637): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('category')
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('edit')
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/edit', Array)
+#6 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2018-05-22 04:02:42 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'category/edit'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'JjrmAJB5vUPxeWWyEDznnalX9Zd0pDHzxTRJriz1UkJVDN9P1heQIqMyLuNVdbXl4DSg3yzKZr6NRyvcaMUVBA=='
+    'Categories' => [
+        'name' => 'adad'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '132'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=category%2Fedit&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '51874'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fedit&id=1'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=category%2Fedit&id=1'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526954562.244
+    'REQUEST_TIME' => 1526954562
+]
+2018-05-22 04:39:28 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::theme in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\di\ServiceLocator.php(77): yii\base\Component->__get('theme')
+#1 C:\xampp\htdocs\projects\trainingYii\backend\views\layouts\main.php(24): yii\di\ServiceLocator->__get('theme')
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="pos...')
+#6 C:\xampp\htdocs\projects\trainingYii\backend\controllers\PostController.php(74): yii\base\Controller->render('create', Array)
+#7 [internal function]: backend\controllers\PostController->actionCreate()
+#8 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('post/create', Array)
+#12 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-05-22 04:39:28 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=post%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '52762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526956768.218
+    'REQUEST_TIME' => 1526956768
+]
+2018-05-22 04:39:49 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::baseUrl in C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\di\ServiceLocator.php(77): yii\base\Component->__get('baseUrl')
+#1 C:\xampp\htdocs\projects\trainingYii\backend\views\layouts\main.php(24): yii\di\ServiceLocator->__get('baseUrl')
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#5 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="pos...')
+#6 C:\xampp\htdocs\projects\trainingYii\backend\controllers\PostController.php(74): yii\base\Controller->render('create', Array)
+#7 [internal function]: backend\controllers\PostController->actionCreate()
+#8 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('post/create', Array)
+#12 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-05-22 04:39:49 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=post%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '52779'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526956789.153
+    'REQUEST_TIME' => 1526956789
+]
+2018-05-22 04:40:25 [::1][1][gafslk1fumgt9lquiei0f4tftm][error][Error] Error: Call to undefined method Yii::app() in C:\xampp\htdocs\projects\trainingYii\backend\views\layouts\main.php:24
+Stack trace:
+#0 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#3 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="pos...')
+#4 C:\xampp\htdocs\projects\trainingYii\backend\controllers\PostController.php(74): yii\base\Controller->render('create', Array)
+#5 [internal function]: backend\controllers\PostController->actionCreate()
+#6 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#9 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('post/create', Array)
+#10 C:\xampp\htdocs\projects\trainingYii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\projects\trainingYii\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2018-05-22 04:40:25 [::1][1][gafslk1fumgt9lquiei0f4tftm][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-backend' => 'gafslk1fumgt9lquiei0f4tftm'
+    '_identity-backend' => '680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/projects/trainingYii/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projects/trainingYii/backend/web/index.php?r=post%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=dc1d4bdc543971a6da4e07b4164e054b4e12f5d1725d02706ed9fae9d14d40e7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-backend=gafslk1fumgt9lquiei0f4tftm; _identity-backend=680f3808896d8adb4f6b95592f5311814b94f280581381821468c3e018c84089a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=c7312c3ca3e00a3a64eb8462e64e29ca762801af619084ef0d6dc0a0a9fcc02da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22s69OFn-aRKKQEIRxIcUHXnWMHsbrD0GF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win32) OpenSSL/1.0.2o PHP/7.1.17'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projects/trainingYii/backend/web/index.php'
+    'REMOTE_PORT' => '52791'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/projects/trainingYii/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/projects/trainingYii/backend/web/index.php'
+    'PHP_SELF' => '/projects/trainingYii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526956825.038
+    'REQUEST_TIME' => 1526956825
+]

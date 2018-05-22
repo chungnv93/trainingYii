@@ -19,4 +19,8 @@ class Category extends ActiveRecord {
             [['name'], 'required'],
         ];
     }
+
+    public function getByID($id) {
+        return Category::findOne($id);
+    }
 }

@@ -16,7 +16,8 @@
                     <td><?php echo $category->name ?></td>
                     <td><?php echo $category->slug ?></td>
                     <td>
-                        <a href=""></a>
+                        <?php echo \yii\helpers\Html::a('Edit', array('category/edit', 'id' => $category->id ), array('class' => 'btn btn-primary')); ?>
+                        <?php echo \yii\helpers\Html::a('Delete', array('category/delete', 'id' => $category->id ), array('class' => 'btn btn-primary')); ?>
                     </td>
                 </tr>
                 <?php

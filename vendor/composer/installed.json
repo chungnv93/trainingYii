@@ -1302,12 +1302,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-            "reference": "ae53b68bf99519ab28c036db879958c620a97b90"
+            "reference": "bf912b6640649d657e2cec6f0f22704c52689921"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ae53b68bf99519ab28c036db879958c620a97b90",
-            "reference": "ae53b68bf99519ab28c036db879958c620a97b90",
+            "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/bf912b6640649d657e2cec6f0f22704c52689921",
+            "reference": "bf912b6640649d657e2cec6f0f22704c52689921",
             "shasum": ""
         },
         "require": {
@@ -1328,7 +1328,7 @@
         "suggest": {
             "ext-xdebug": "^2.6.0"
         },
-        "time": "2018-05-20T14:38:55+00:00",
+        "time": "2018-05-21T08:52:41+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3076,12 +3076,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "7de6aeecbf591ef409789035d9490ada1bc41969"
+            "reference": "503a71d6251fbc8ae15781a97423f8d0f49907fd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7de6aeecbf591ef409789035d9490ada1bc41969",
-            "reference": "7de6aeecbf591ef409789035d9490ada1bc41969",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/503a71d6251fbc8ae15781a97423f8d0f49907fd",
+            "reference": "503a71d6251fbc8ae15781a97423f8d0f49907fd",
             "shasum": ""
         },
         "require": {
@@ -3097,7 +3097,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2-composer": "~2.0.4"
         },
-        "time": "2018-05-20T20:17:34+00:00",
+        "time": "2018-05-21T17:19:49+00:00",
         "bin": [
             "yii"
         ],
