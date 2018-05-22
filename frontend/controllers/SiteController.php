@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Categories;
 use common\models\Posts;
 use Yii;
 use yii\base\InvalidParamException;
@@ -219,5 +220,11 @@ class SiteController extends Controller
         $model = new Posts();
         $post = $model->getByIdPost($id);
         return $this->render('detail', ['post' => $post]);
+    }
+
+    public function actionCategory($id) {
+        $category = Categories::findOne($id);
+        $posts = $category->getPostbyCate($category->id);
+        return $this->render('category', ['posts' => $posts, 'category' => $category]);
     }
 }

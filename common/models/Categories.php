@@ -1,7 +1,6 @@
 <?php
 
 namespace common\models;
-
 use Yii;
 
 /**
@@ -61,5 +60,9 @@ class Categories extends \yii\db\ActiveRecord
 
     public function getByID($id) {
         return Category::findOne($id);
+    }
+
+    public function getPostbyCate($id) {
+        return Posts::find()->where(['cate_id' => $id])->all();
     }
 }
