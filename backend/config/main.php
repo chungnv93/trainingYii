@@ -37,14 +37,22 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
-        'urlManager' => [
+
+//        'urlManager' => [
+//            'enablePrettyUrl' => true,
+//            'showScriptName' => false,
+//            'rules' => [
+//            ],
+//        ],
+
+        'urlManagerImageBackend' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
+            'class' => 'yii\web\UrlManager',
+            'hostInfo' => 'http://localhost/projects/trainingYii/backend/',
+            'baseUrl' => 'http://localhost/projects/trainingYii/backend/'
         ],
-        */
+
     ],
     'params' => $params,
 ];

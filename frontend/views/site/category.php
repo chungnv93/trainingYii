@@ -20,7 +20,7 @@ $this->title = $category->name;
                 foreach ($posts as $post) {
             ?>
                     <div class="col-lg-12">
-                        <h2><?php echo $post->title ?> --- </h2>
+                        <h2><?php echo $post->title ?> --- <?= $post->cate->name; ?></h2>
 
                         <p><?php echo $post->description ?></p>
 

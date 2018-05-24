@@ -18,6 +18,7 @@ $this->title = 'My Yii Application';
 
         <div class="row">
             <?= \frontend\widgets\ListPostWidget::widget(); ?>
+            <?php require "globals.php"; ?>
         </div>
 
     </div>

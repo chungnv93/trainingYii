@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ?>
                 <div class="col-sm-12 border-box">
                     <div class="col-sm-2">
-                        <p class="title-name"><?= \common\models\User::findOne($comment->user_id)->username ?></p>
+                        <p class="title-name"><?= $comment->user->username ?></p>
                     </div>
                     <div class="col-sm-9">
                         <?= $comment->content ?>

@@ -241,7 +241,7 @@ class SiteController extends Controller
 
     public function actionCategory($id) {
         $category = Categories::findOne($id);
-        $posts = $category->getPostbyCate($category->id);
+        $posts = $category->posts;
         return $this->render('category', ['posts' => $posts, 'category' => $category]);
     }
 }
