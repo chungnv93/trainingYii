@@ -45,6 +45,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Post', 'url' => ['/post/index']];
         $menuItems[] = ['label' => 'Comment', 'url' => ['/comment/index']];
         $menuItems[] = ['label' => 'Test Post', 'url' => ['/test/index']];
+        $menuItems[] = ['label' => 'Country', 'url' => ['/country/index']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
@@ -62,11 +63,15 @@ AppAsset::register($this);
     ?>
 
     <div class="container">
+        <?=  \backend\widgets\SibarWidget::widget(); ?>
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
-        <?= $content ?>
+
+        <div class="rows">
+            <?= $content ?>
+        </div>
     </div>
 </div>
 

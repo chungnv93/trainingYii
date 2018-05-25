@@ -31,10 +31,11 @@ use yii\grid\GridView;
             ArrayHelper::map(Categories::find()->all(), 'id', 'name'), ['class' => 'form-control']) ?>
     </div>
 
+
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Ajax', ['class' => 'btn btn-success', 'id' => 'ajaxJob']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
-
 </div>

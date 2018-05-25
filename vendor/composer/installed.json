@@ -531,6 +531,54 @@
         "description": "BDD assertion library for PHPUnit"
     },
     {
+        "name": "dmstr/yii2-gii-command",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dmstr/yii2-gii-command.git",
+            "reference": "c0ff1a90f08db702325c84ee1869ddea6f4085d1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dmstr/yii2-gii-command/zipball/c0ff1a90f08db702325c84ee1869ddea6f4085d1",
+            "reference": "c0ff1a90f08db702325c84ee1869ddea6f4085d1",
+            "shasum": ""
+        },
+        "time": "2014-10-01T18:27:10+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "dmstr\\GiiControllerBootstrap"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dmstr\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Tobias Munk",
+                "email": "tobias@diemeisterei.de"
+            }
+        ],
+        "description": "Running Yii2 Framework Code Generator Gii from command line",
+        "keywords": [
+            "batch",
+            "code generator",
+            "command line",
+            "extension",
+            "gii",
+            "shell",
+            "yii2"
+        ],
+        "abandoned": true
+    },
+    {
         "name": "doctrine/instantiator",
         "version": "dev-master",
         "version_normalized": "9999999-dev",

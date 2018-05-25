@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\Tests;
 use common\models\TestsSearch;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -38,10 +39,9 @@ class TestController extends Controller
     {
         $searchModel = new TestsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+            'dataProvider' => $dataProvider
         ]);
     }
 
@@ -68,7 +68,7 @@ class TestController extends Controller
         $model = new Tests();
         if ($model->load(Yii::$app->request->post())) {
             $model->upload = UploadedFile::getInstance($model, 'upload');
-            $this->uploadFile($model);
+            $model->uploadFile($model);
             $model->save(false);
             return $this->redirect(['view', 'id' => $model->id]);
         }
@@ -90,14 +90,7 @@ class TestController extends Controller
         $model = $this->findModel($id);
         if ($model->load(Yii::$app->request->post())) {
             $request = Yii::$app->request->post();
-            $uploadFile = UploadedFile::getInstance($model, 'upload');
-            if($uploadFile == null) {
-                $model->upload = $request['current_upload'];
-            } else {
-                $model->upload = UploadedFile::getInstance($model, 'upload');
-                $this->uploadFile($model);
-                unlink(Yii::getAlias('@app/uploads/'.$request['current_upload']));
-            }
+            $model->updateImage($model, $request);
             $model->save(false);
             return $this->redirect(['view', 'id' => $model->id]);
         }
@@ -119,7 +112,7 @@ class TestController extends Controller
         $data = $this->findModel($id);
         unlink(Yii::getAlias('@app/uploads/'.$data['upload']));
         $data->delete();
-
+        Yii::$app->session->setFlash('success' , "Delete successfull!");
         return $this->redirect(['index']);
     }
 
@@ -139,26 +132,10 @@ class TestController extends Controller
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
-
-    public function uploadFile($model)
-    {
-        $nameImage = time();
-        $uploadDir = Yii::getAlias('@app/uploads/');
-        if ($model->load(Yii::$app->request->post())) {
-            $model->upload = UploadedFile::getInstance($model, 'upload');
-            if ($model->validate(['upload/' => $model->upload->name ])) {
-                if ($model->upload) {
-                    $filePath = $uploadDir . $nameImage . '.' . $model->upload->extension;
-                    if ($model->upload->saveAs($filePath)) {
-                        $model->upload =  $nameImage . '.' . $model->upload->extension;
-                        return;
-                    }
-                }
-
-                if ($model->save(false)) {
-                    return $this->redirect(['view', 'id' => $model->id]);
-                }
-            }
-        }
+    public function actionTest() {
+        echo 1;
     }
+
+
+
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50ba4639f1735e3a125676e470115c47",
+    "content-hash": "5cd77c09b59d11a632e5720891ad134a",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -231,6 +231,52 @@
                 "slugify"
             ],
             "time": "2018-03-21T11:20:30+00:00"
+        },
+        {
+            "name": "dmstr/yii2-gii-command",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-gii-command.git",
+                "reference": "c0ff1a90f08db702325c84ee1869ddea6f4085d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-gii-command/zipball/c0ff1a90f08db702325c84ee1869ddea6f4085d1",
+                "reference": "c0ff1a90f08db702325c84ee1869ddea6f4085d1",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "dmstr\\GiiControllerBootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "tobias@diemeisterei.de"
+                }
+            ],
+            "description": "Running Yii2 Framework Code Generator Gii from command line",
+            "keywords": [
+                "batch",
+                "code generator",
+                "command line",
+                "extension",
+                "gii",
+                "shell",
+                "yii2"
+            ],
+            "abandoned": true,
+            "time": "2014-10-01T18:27:10+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -665,6 +711,53 @@
                 "yii2"
             ],
             "time": "2018-05-04T21:18:11+00:00"
+        },
+        {
+            "name": "yiisoft/yii2-debug",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-debug.git",
+                "reference": "9634019f7f9590943427d0bafe6a40da3143ac43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/9634019f7f9590943427d0bafe6a40da3143ac43",
+                "reference": "9634019f7f9590943427d0bafe6a40da3143ac43",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.13",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\debug\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                }
+            ],
+            "description": "The debugger extension for the Yii framework",
+            "keywords": [
+                "debug",
+                "debugger",
+                "yii2"
+            ],
+            "time": "2018-05-12T18:29:46+00:00"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -3225,53 +3318,6 @@
             "time": "2018-04-19T15:46:26+00:00"
         },
         {
-            "name": "yiisoft/yii2-debug",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "9634019f7f9590943427d0bafe6a40da3143ac43"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/9634019f7f9590943427d0bafe6a40da3143ac43",
-                "reference": "9634019f7f9590943427d0bafe6a40da3143ac43",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0.13",
-                "yiisoft/yii2-bootstrap": "~2.0.0"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\debug\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com"
-                }
-            ],
-            "description": "The debugger extension for the Yii framework",
-            "keywords": [
-                "debug",
-                "debugger",
-                "yii2"
-            ],
-            "time": "2018-05-12T18:29:46+00:00"
-        },
-        {
             "name": "yiisoft/yii2-faker",
             "version": "dev-master",
             "source": {
@@ -3375,7 +3421,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cocur/slugify": 20
+        "cocur/slugify": 20,
+        "yiisoft/yii2-debug": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

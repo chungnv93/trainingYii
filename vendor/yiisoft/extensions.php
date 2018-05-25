@@ -48,4 +48,14 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii/src',
     ),
   ),
+  'dmstr/yii2-gii-command' => 
+  array (
+    'name' => 'dmstr/yii2-gii-command',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@dmstr' => $vendorDir . '/dmstr/yii2-gii-command',
+    ),
+    'bootstrap' => 'dmstr\\GiiControllerBootstrap',
+  ),
 );
